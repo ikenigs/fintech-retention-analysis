@@ -65,4 +65,4 @@ A synthetic dataset of **250,000 transactions** was created in Python to simulat
 | `trx_type` | Transaction type (`payment`, `topup`, `withdrawal`, `transfer`) |
 | `final_status` | Transaction outcome (`accepted` ~90%, `declined` ~10%) |
 
-You can view the interactive Power BI dashboard [here](https://app.powerbi.com/view?r=ae02ae89-ea42-4e03-a180-aecc36d90fe5).
+You can view the interactive Power BI dashboard [here](https://app.powerbi.com/reportEmbed?reportId=ae02ae89-ea42-4e03-a180-aecc36d90fe5&autoAuth=true&ctid=a8eec281-aaa3-4dae-ac9b-9a398b9215e7)
