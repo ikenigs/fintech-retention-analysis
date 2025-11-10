@@ -65,4 +65,15 @@ A synthetic dataset of **250,000 transactions** was created in Python to simulat
 | `trx_type` | Transaction type (`payment`, `topup`, `withdrawal`, `transfer`) |
 | `final_status` | Transaction outcome (`accepted` ~90%, `declined` ~10%) |
 
+---
+
+**Report:**
+
 You can view the interactive Power BI dashboard [here](https://app.powerbi.com/reportEmbed?reportId=ae02ae89-ea42-4e03-a180-aecc36d90fe5&autoAuth=true&ctid=a8eec281-aaa3-4dae-ac9b-9a398b9215e7)
+
+---
+
+**Key insights:**
+The Power BI dashboard provides a clear overview of user retention dynamics throughout the year. By combining new, recurring, revived, and churned user segments, it reveals how the active user base evolves month by month.
+Key trends show that most users remain engaged over multiple periods, while revived users represent an important source of reactivation after inactivity. The churn curve helps identify moments of user drop-off, supporting proactive retention strategies.
+Together, these insights allow business teams to monitor user lifecycle health, measure engagement effectiveness, and assess the impact of growth or re-engagement initiatives in real time.
