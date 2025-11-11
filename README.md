@@ -59,13 +59,15 @@ A synthetic dataset of **250,000 transactions** was created using ChatGPT to sim
 
 ---
 
-**Report:**
+***Report:***
 
 You can view the interactive Power BI dashboard [here](https://app.powerbi.com/reportEmbed?reportId=ae02ae89-ea42-4e03-a180-aecc36d90fe5&autoAuth=true&ctid=a8eec281-aaa3-4dae-ac9b-9a398b9215e7)
 
 ---
 
 **Key insights:**
-The Power BI dashboard provides a clear overview of user retention dynamics throughout the year. By combining new, recurring, revived, and churned user segments, it reveals how the active user base evolves month by month.
-Key trends show that most users remain engaged over multiple periods, while revived users represent an important source of reactivation after inactivity. The churn curve helps identify moments of user drop-off, supporting proactive retention strategies.
-Together, these insights allow business teams to monitor user lifecycle health, measure engagement effectiveness, and assess the impact of growth or re-engagement initiatives in real time.
+The dashboard provides a data-driven view of how users engage with the platform over time, dividing them into new, recurring, revived, and churned groups.
+
+Throughout 2024, the platform maintained a steady active base of around 20,000 monthly users, with new user acquisition averaging between 1,200 and 1,500 per month. The churn rate fluctuated between 8% and 12%, with peaks in March and August that may reflect seasonal or campaign-related effects.
+
+Recurring users consistently represent the largest share of the population, accounting for about 75% of total active users, which shows strong ongoing engagement. Revived users, who return after a period of inactivity, make up roughly 5% to 7% of monthly activity and highlight the potential impact of re-engagement efforts.
