@@ -28,13 +28,15 @@ The goal is to understand behavioral patterns, retention trends, and product hea
 
 The retention views are built in layers using CTEs:
 
-| CTE | Purpose |
-|------|----------|
-| **TRX** | Selects successful transactions (`trx_status = 'accepted'`) |
-| **MONTHLY_ACTIVITY / WEEKLY_ACTIVITY** | Identifies when each user was active |
-| **NEW_USERS** | Finds first active period per user |
-| **REVIVED** | Detects users reactivated after inactivity |
-| **Final UNION** | Combines all groups: new, recurring, revived, churner |
+| **Step / CTE**                         | **What it does**                                | **How it works**                                                                                                                         |
+| -------------------------------------- | ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| **TRX**                                | Gets all successful transactions.               | Filters rows where the status = `'EXITOSO'` (or `'accepted'`) and selects key fields (`user_id`, `creation_date`, `amount`, `trx_type`). |
+| **WEEKLY_ACTIVITY / MONTHLY_ACTIVITY** | Finds when each user was active.                | Groups transactions by the **start of the week or month** using `date_trunc('week'/'month', creation_date)`.                             |
+| **NEW_USERS**                          | Finds each user’s **first active period**.      | Uses `MIN(week/month)` for every user to mark their first appearance.                                                                    |
+| **REVIVED**                            | Finds users who came back after being inactive. | Checks which users have activity this period but **not in the previous one**.                                                            |
+| **CHURNED**                            | Finds users who stopped being active.           | Looks for users active last period but **missing this period**.                                                                          |
+| **RECURRING**                          | Finds users who stayed active.                  | Keeps users active this period but **not new or revived**.                                                                               |
+| **Final UNION**                        | Combines all user types together.               | Merges `new`, `recurring`, `revived`, and `churner` into a single view for analysis.                                                     |
 
 
 ### 📊 Dataset Summary
