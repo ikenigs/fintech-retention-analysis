@@ -1,4 +1,4 @@
-# 🧮 Fintech User Retention Analysis (SQLite + Python + Power BI)
+# 🧮 Fintech User Retention Analysis (ChatGPT  + SQLite + Python + Power BI)
 
 ### 📊 Overview  
 This project analyzes **user acquisition, retention and churn dynamics** in a simulated fintech environment.  
@@ -17,6 +17,7 @@ The goal is to understand behavioral patterns, retention trends, and product hea
 ### 🧱 Tech Stack
 | Component | Purpose |
 |------------|----------|
+| **ChatGPT** | Synthetic dataset creation |
 | **SQLite** | Lightweight analytical database for local computation and views creation |
 | **SQL** | Retention logic and classification |
 | **Python (Pandas + SQLite3)** | Data loading to Power BI |
@@ -41,7 +42,7 @@ The retention views are built in layers using CTEs:
 
 ### 📊 Dataset Summary
 
-A synthetic dataset of **250,000 transactions** was created in Python to simulate real-world fintech usage behavior:
+A synthetic dataset of **250,000 transactions** was created using ChatGPT to simulate real-world fintech usage behavior:
 
 - **Rows:** 250,000  
 - **Users:** ~25,000 unique (`final_user_id`)  
